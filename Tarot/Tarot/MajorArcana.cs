@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
+    // Major Arcana extends Cards
     class MajorArcana : Cards
     {
         // Enum for the names of the Cards in the Major Arcana of the Tarot
@@ -17,6 +18,17 @@ namespace Tarot
             Empress,
             Emperor,
             Priest,
+
+
+
+
+
+
+
+
+
+
+
             Lovers,
             Chariot,
             Hermit,

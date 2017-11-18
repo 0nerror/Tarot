@@ -11,6 +11,8 @@ namespace Tarot
         static void Main(string[] args)
         {
             Console.WriteLine("*** Tarot Cards and their meanings");
+            // need to add some code to have the program do something
+
             Console.ReadLine();
         }
     }

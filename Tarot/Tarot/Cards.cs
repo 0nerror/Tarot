@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
+    // base class for the cards
     class Cards
     {
         string FaceName { get; set; }
@@ -16,6 +17,7 @@ namespace Tarot
         string Future { get; set; }
         string Decision { get; set; } // this is a field to obtain a decription for pulling a yes or no answer from the cards
         string Timing { get; set; }
+
 
 
     }

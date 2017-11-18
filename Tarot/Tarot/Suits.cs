@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
+    // Suits extends Minor Arcana 
     class Suits : MinorArcana
     {
         //enum to assign the name of the suit

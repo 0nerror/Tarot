@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Swords : Suits
+    class Wands : Suits
     {
     }
 }

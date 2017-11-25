@@ -28,9 +28,17 @@ namespace Tarot
             King = 14
         }
 
-        // override to set the Arcana to minor
-
-        // need to assign a face card based on the enum
-
+        public override string FaceName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Arcana
+        {
+            get { return "Minor Arcana"; }
+            set { }
+        }
+        public override string Past { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Present { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Future { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Decision { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override string Timing { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string MinorArcDesc = "The Minor Arcana talks about events, issues and people in our daily lives.";
     }
 }

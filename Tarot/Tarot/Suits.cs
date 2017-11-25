@@ -26,6 +26,8 @@ namespace Tarot
             Diamonds
         }
 
+
+
         string Element { get; set; }
         string[] Zodiac { get; set; }
         string Association { get; set; }

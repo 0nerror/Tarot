@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Program
+    class Menu
     {
-        static void Main(string[] args)
+        public void MenuOptions()
         {
-            Console.WriteLine("*** Tarot Cards and their meanings");
-            // need to add some code to have the program do something
-            
-
             Console.WriteLine("1. Any Card at Random."); // call ShowRandomCard
             Console.WriteLine("2. A Random Major Arcana card."); // call ShowRandomMajor
             Console.WriteLine("3. A Random Minor Arcana Card."); // Call ShowRaondomMinor
@@ -54,12 +50,12 @@ namespace Tarot
                         Console.WriteLine("Default case");
                         break;
                 }
+}
+            else
+            {
+                Console.WriteLine("Choose Again:");
+
             }
-
-            Console.ReadLine();
-
-
         }
-
     }
 }

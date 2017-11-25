@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Cups : MinorArcana
+    class Cups : Suits
     {
+        
     }
 }

@@ -18,22 +18,12 @@ namespace Tarot
             Empress,
             Emperor,
             Priest,
-
-
-
-
-
-
-
-
-
-
-
             Lovers,
             Chariot,
             Hermit,
             Wheel,
             Strength,
+            Justice,
             HangedMan,
             Death,
             Temperance,
@@ -45,7 +35,35 @@ namespace Tarot
             Judgement,
             World
         }
-
         // override to set the Arcana to Major
+        public override string Arcana
+        {
+            get { return "Major Arcana"; }
+            set { }
+        }
+
+        public override string Decision { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override string FaceName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override string Future { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override string Past { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override string Present { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override string Timing { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void Display()
+        {
+            // to pull just the Major Arcana Description
+            string MajArcDesc = "The Major Arcana Chart's the soul's journey through life - The big archetypal themes of life to help you evolve. The larger lessons in life. ";
+            Console.WriteLine(MajArcDesc);
+        }
+
+
+
+
+
     }
 }

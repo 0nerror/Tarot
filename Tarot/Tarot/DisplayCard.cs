@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Tarot
 {
     class DisplayCard
@@ -65,7 +66,36 @@ namespace Tarot
         public void ShowCard(int i)
         {
             // method to display the cards information 
-            Console.WriteLine("Test the Options {0}", i);
+            
+            if (i < 21)
+            {
+                // call the display method for Major Arcana
+                MajorArcana flip = new MajorArcana(i);
+            }
+            else if  (i >=22 && i < 36)
+            {
+                // call cups method to display card info
+                Cups flip = new Cups(i);
+            }
+            else if (i >= 36 && i < 50)
+            {
+                // call swords display method
+                Swords flip = new Swords(i);
+            }
+            else if (i >= 50 && i < 64)
+            {
+                // call wands display method
+                Wands flip = new Wands(i);
+            }
+            else if (i >= 64 && i <78)
+            {
+                // call pentacle display method
+                Pentacles flip = new Pentacles(i);
+            }
+            else
+            {
+                Console.WriteLine("Your card selection is not in the Tarot Deck. Please make a selection between 0 and 77");
+            }
         }
     }
 }

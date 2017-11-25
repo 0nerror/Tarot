@@ -16,11 +16,9 @@ namespace Tarot
             Console.WriteLine("4. A specific card from the Tarot.");// CallShowCardPicked 
             Console.WriteLine("5. Display the information for all 78 cards in order."); // Call AllCards
             Console.WriteLine("6. Exit the program");
-
-
-            // Need to update this to accept the input from the console still yet
-            //Console.ReadLine();
+            // get the input from the user and convert to int
             int caseSwitch = Convert.ToInt32(Console.ReadLine()); ;
+            // call the correct method based on the user's selection
             if (caseSwitch != 6)
             {
                 DisplayCard card = new DisplayCard();
@@ -47,15 +45,16 @@ namespace Tarot
                     //Console.ReadLine();
                     // break;
                     default:
-                        Console.WriteLine("Default case");
+                        Console.WriteLine("Please make a selection from the Menu");
                         break;
                 }
 }
             else
             {
-                Console.WriteLine("Choose Again:");
-
+                Console.WriteLine("Have a great day!");
             }
+          
+
         }
     }
 }

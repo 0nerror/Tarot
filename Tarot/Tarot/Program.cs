@@ -12,7 +12,8 @@ namespace Tarot
         {
             Console.WriteLine("*** Tarot Cards and their meanings");
             // need to add some code to have the program do something
-            
+
+            // This is duplicated in Menu, I want to call the method to display this rather than leave it here.
 
             Console.WriteLine("1. Any Card at Random."); // call ShowRandomCard
             Console.WriteLine("2. A Random Major Arcana card."); // call ShowRandomMajor
@@ -22,7 +23,7 @@ namespace Tarot
             Console.WriteLine("6. Exit the program");
 
 
-            // Need to update this to accept the input from the console still yet
+            // Need to add validation if the selection is somthing other than 1-6
             //Console.ReadLine();
             int caseSwitch = Convert.ToInt32(Console.ReadLine()); ;
             if (caseSwitch != 6)
@@ -46,15 +47,32 @@ namespace Tarot
                     case 5:
                         card.AllCards();
                         break;
-                    //case 6:
-                    //  Console.WriteLine("Press enter to exit.");
-                    //Console.ReadLine();
-                    // break;
                     default:
                         Console.WriteLine("Default case");
                         break;
                 }
             }
+            else
+            {
+                Console.WriteLine("Have a Great day!");
+
+            }
+
+            /*/ need to add a loop to call the menu again in the event the user wants to select another card
+            Console.WriteLine("Would you like to select again? Enter Y for yes or N for no");
+            string answer = Console.ReadLine();
+            answer.ToLower();
+            if ()
+            {
+                // Call the menu again
+            }
+            else
+            {
+                Console.WriteLine("Have a Great day!");
+            }
+
+            */
+
 
             Console.ReadLine();
 

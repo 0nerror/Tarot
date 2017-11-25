@@ -9,32 +9,9 @@ namespace Tarot
     // Major Arcana extends Cards
     class MajorArcana : Cards
     {
-        // Enum for the names of the Cards in the Major Arcana of the Tarot
-        public enum Faces
-        {
-            Fool,
-            Magician,
-            Priestess,
-            Empress,
-            Emperor,
-            Priest,
-            Lovers,
-            Chariot,
-            Hermit,
-            Wheel,
-            Strength,
-            Justice,
-            HangedMan,
-            Death,
-            Temperance,
-            Devil,
-            Tower,
-            Star,
-            Moon,
-            Sun,
-            Judgement,
-            World
-        }
+        public int i;
+        // the Major Arcana Description
+        string MajArcDesc = "The Major Arcana Chart's the soul's journey through life - The big archetypal themes of life to help you evolve. The larger lessons in life. ";
         // override to set the Arcana to Major
         public override string Arcana
         {
@@ -42,28 +19,214 @@ namespace Tarot
             set { }
         }
 
-        public override string Decision { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string FaceName;
+        string Past = "Past Meaning";
+        string Present = "Present Meaning";
+        string Future = "Future Meaning";
+        string Decision = "Recommended decision";
+        string Timing = "When it will happen";
 
-        public override string FaceName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public override string Future { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public override string Past { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public override string Present { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public override string Timing { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public void Display()
+        // Constructor to display the information after assignment.
+        public MajorArcana(int i)
         {
-            // to pull just the Major Arcana Description
-            string MajArcDesc = "The Major Arcana Chart's the soul's journey through life - The big archetypal themes of life to help you evolve. The larger lessons in life. ";
-            Console.WriteLine(MajArcDesc);
+            // use the passed int i to detemrine which of the 22 options to display 
+            int caseSwitch = i;
+            
+            switch (caseSwitch)
+            {
+                case 0:
+                    FaceName = "Fool";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 1:
+                    FaceName = "Magician";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 2:
+                    FaceName = "Priestess";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 3:
+                    FaceName = "Empress";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 4:
+                    FaceName = "Emperor";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 5:
+                    FaceName = "Priest";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 6:
+                    FaceName = "Lovers";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 7:
+                    FaceName = "Chariot";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 8:
+                    FaceName = "Hermit";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 9:
+                    FaceName = "Wheel";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 10:
+                    FaceName = "Strength";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 11:
+                    FaceName = "Justice";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 12:
+                    FaceName = "Hanged Man";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 13:
+                    FaceName = "Death";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 14:
+                    FaceName = "Temperance";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 15:
+                    FaceName = "Devil";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 16:
+                    FaceName = "Tower";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 17:
+                    FaceName = "Star";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 18:
+                    FaceName = "Moon";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 19:
+                    FaceName = "Sun";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 20:
+                    FaceName = "Judgement";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                case 21:
+                    FaceName = "World";
+                    // Past = "";
+                    // Present = "";
+                    // Future = "";
+                    // Decision = "";
+                    // Timing = "";
+                    break;
+                default:
+                    break;
+            }
+
+            Console.WriteLine("Arcana: {0}", Arcana);
+            Console.WriteLine("Arcana Desc: \n {0}", MajArcDesc);
+            Console.WriteLine("Card: The {0}", FaceName);
+            Console.WriteLine("Past: {0}", Past);
+            Console.WriteLine("Present: {0}", Present);
+            Console.WriteLine("Future: {0}", Future);
+            Console.WriteLine("Decision: {0}", Decision);
+            Console.WriteLine("Timing: {0}", Timing);
+            Console.WriteLine("");
         }
-
-
-
-
 
     }
 }
+   
+
+

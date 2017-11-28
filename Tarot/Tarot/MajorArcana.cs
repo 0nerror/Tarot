@@ -19,9 +19,6 @@ namespace Tarot
             set { }
         }
 
-        string FaceName;
-
-
         // Constructor to display the information after assignment.
         public MajorArcana(int i)
         {
@@ -32,7 +29,8 @@ namespace Tarot
             {
                 case 0:
                     FaceName = "Fool";
-                    // Past = "";
+                    // Meaning = ""; 
+                    // Past = ""; 
                     // Present = "";
                     // Future = "";
                     // Decision = "";
@@ -213,6 +211,7 @@ namespace Tarot
             Console.WriteLine("Arcana: {0}", Arcana);
             Console.WriteLine("Arcana Desc: \n {0}", MajArcDesc);
             Console.WriteLine("Card: The {0}", FaceName);
+            Console.WriteLine("General Meaning: \n {0}", Meaning);
             Console.WriteLine("Past: {0}", Past);
             Console.WriteLine("Present: {0}", Present);
             Console.WriteLine("Future: {0}", Future);

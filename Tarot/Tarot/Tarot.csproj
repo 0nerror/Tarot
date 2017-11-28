@@ -46,7 +46,6 @@
     <Compile Include="Cups.cs" />
     <Compile Include="DisplayCard.cs" />
     <Compile Include="MajorArcana.cs" />
-    <Compile Include="Menu.cs" />
     <Compile Include="MinorArcana.cs" />
     <Compile Include="Pentacles.cs" />
     <Compile Include="Program.cs" />

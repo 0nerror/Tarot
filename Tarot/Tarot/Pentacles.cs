@@ -9,7 +9,6 @@ namespace Tarot
     class Pentacles : MinorArcana
     {
         public int i;
-        string FaceName;
         string Element = "Earth";
         string[] Zodiac = { "Taurus", "Capricorn", "Virgo" };
         string Associated = "Finance and material items";
@@ -68,10 +67,11 @@ namespace Tarot
 
             Console.WriteLine("Card: {0}", FaceName);
             Console.WriteLine("Arcana: {0}", Arcana);
-            Console.WriteLine("Arcana Desc: {0}", MinorArcDesc);
+            Console.WriteLine("Arcana Desc: \n {0}", MinorArcDesc);
             Console.WriteLine("Element: {0}", Element);
             Console.WriteLine("Zodiac: {0}", Zodiac);
             Console.WriteLine("Associated with: {0}", Associated);
+            Console.WriteLine("General Meaning: \n {0}", Meaning);
             Console.WriteLine("Past: {0}", Past);
             Console.WriteLine("Present: {0}", Present);
             Console.WriteLine("Future: {0}", Future);

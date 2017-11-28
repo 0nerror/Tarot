@@ -16,8 +16,7 @@ namespace Tarot
                 Console.WriteLine("*** Tarot Cards and their meanings");
                 // need to add some code to have the program do something
 
-                // This is duplicated in Menu, I want to call the method to display this rather than leave it here.
-
+                // Menu to display to the user
                 Console.WriteLine("1. Any Card at Random."); // call ShowRandomCard
                 Console.WriteLine("2. A Random Major Arcana card."); // call ShowRandomMajor
                 Console.WriteLine("3. A Random Minor Arcana Card."); // Call ShowRaondomMinor
@@ -27,8 +26,8 @@ namespace Tarot
 
 
                 // Need to add validation if the selection is somthing other than 1-6
-                //Console.ReadLine();
-                caseSwitch = Convert.ToInt32(Console.ReadLine()); ;
+
+                caseSwitch = Convert.ToInt32(Console.ReadLine()); 
                 if (caseSwitch != 6)
                 {
                     DisplayCard card = new DisplayCard();

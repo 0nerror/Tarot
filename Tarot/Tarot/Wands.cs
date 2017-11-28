@@ -6,70 +6,69 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Swords : MinorArcana
+    class Wands : MinorArcana
     {
         public int i;
         string FaceName;
-        string Element = "Air";
-        string[] Zodiac = { "Gemini", "Libra", "Aquarius" };
-        string Associated = "Intellectual Activity";
+        string Element = "Fire";
+        string[] Zodiac = { "Leo", "Aries", "Sagittarius" };
+        string Associated = "Career";
         string Past = "";
         string Present = "";
         string Future = "";
         string Decision = "";
         string Timing = "";
 
-        public Swords(int i)
+        public Wands(int i)
         {
             int caseSwitch = i;
 
             switch (caseSwitch)
             {
-                case 36:
-                    FaceName = "One of Swords";
+                case 50:
+                    FaceName = "One of Wands";
                     break;
-                case 37:
-                    FaceName = "Two of Swords";
+                case 51:
+                    FaceName = "Two of Wands";
                     break;
-                case 38:
-                    FaceName = "Three of Swords";
+                case 52:
+                    FaceName = "Three of Wands";
                     break;
-                case 39:
-                    FaceName = "Four of Swords";
+                case 53:
+                    FaceName = "Four of Wands";
                     break;
-                case 40:
-                    FaceName = "Five of Swords";
+                case 54:
+                    FaceName = "Five of Wands";
                     break;
-                case 41:
-                    FaceName = "Six of Swords";
+                case 55:
+                    FaceName = "Six of Wands";
                     break;
-                case 42:
-                    FaceName = "Seven of Swords";
+                case 56:
+                    FaceName = "Seven of Wands";
                     break;
-                case 43:
-                    FaceName = "Eight of Swords";
+                case 57:
+                    FaceName = "Eight of Wands";
                     break;
-                case 44:
-                    FaceName = "Nine of Swords";
+                case 58:
+                    FaceName = "Nine of Wands";
                     break;
-                case 45:
-                    FaceName = "Ten of Swords";
+                case 59:
+                    FaceName = "Ten of Wands";
                     break;
-                case 46:
-                    FaceName = "Page of Swords";
+                case 60:
+                    FaceName = "Page of Wands";
                     break;
-                case 47:
-                    FaceName = "Knave of Swords";
+                case 61:
+                    FaceName = "Knave of Wands";
                     break;
-                case 48:
-                    FaceName = "Queen of Swords";
+                case 62:
+                    FaceName = "Queen of Wands";
                     break;
-                case 49:
-                    FaceName = "King of Swords";
+                case 63:
+                    FaceName = "King of Wands";
                     break;
                 default:
                     break;
-
             }
 
             Console.WriteLine("Card: {0}", FaceName);

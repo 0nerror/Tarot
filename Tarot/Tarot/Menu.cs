@@ -6,26 +6,19 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Program
+    class Menu
     {
-        static void Main(string[] args)
+        public void MenuOptions()
         {
-            Console.WriteLine("*** Tarot Cards and their meanings");
-            // need to add some code to have the program do something
-
-            // This is duplicated in Menu, I want to call the method to display this rather than leave it here.
-
             Console.WriteLine("1. Any Card at Random."); // call ShowRandomCard
             Console.WriteLine("2. A Random Major Arcana card."); // call ShowRandomMajor
             Console.WriteLine("3. A Random Minor Arcana Card."); // Call ShowRaondomMinor
             Console.WriteLine("4. A specific card from the Tarot.");// CallShowCardPicked 
             Console.WriteLine("5. Display the information for all 78 cards in order."); // Call AllCards
             Console.WriteLine("6. Exit the program");
-
-
-            // Need to add validation if the selection is somthing other than 1-6
-            //Console.ReadLine();
+            // get the input from the user and convert to int
             int caseSwitch = Convert.ToInt32(Console.ReadLine()); ;
+            // call the correct method based on the user's selection
             if (caseSwitch != 6)
             {
                 DisplayCard card = new DisplayCard();
@@ -47,37 +40,21 @@ namespace Tarot
                     case 5:
                         card.AllCards();
                         break;
+                    //case 6:
+                    //  Console.WriteLine("Press enter to exit.");
+                    //Console.ReadLine();
+                    // break;
                     default:
-                        Console.WriteLine("Default case");
+                        Console.WriteLine("Please make a selection from the Menu");
                         break;
                 }
-            }
+}
             else
             {
-                Console.WriteLine("Have a Great day!");
-
+                Console.WriteLine("Have a great day!");
             }
-
-            /*/ need to add a loop to call the menu again in the event the user wants to select another card
-            Console.WriteLine("Would you like to select again? Enter Y for yes or N for no");
-            string answer = Console.ReadLine();
-            answer.ToLower();
-            if ()
-            {
-                // Call the menu again
-            }
-            else
-            {
-                Console.WriteLine("Have a Great day!");
-            }
-
-            */
-
-
-            Console.ReadLine();
-
+          
 
         }
-
     }
 }

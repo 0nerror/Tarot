@@ -6,17 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Cards
+    // base class for the cards
+    abstract public class Cards
     {
-        string FaceName { get; set; }
-        string Arcana { get; set; }
-
-        string Past { get; set; }
-        string Present { get; set; }
-        string Future { get; set; }
-        string Decision { get; set; } // this is a field to obtain a decription for pulling a yes or no answer from the cards
-        string Timing { get; set; }
-
-
+        abstract public string Arcana  { get; set; }
     }
 }

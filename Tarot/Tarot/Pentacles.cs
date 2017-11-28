@@ -6,70 +6,69 @@ using System.Threading.Tasks;
 
 namespace Tarot
 {
-    class Swords : MinorArcana
+    class Pentacles : MinorArcana
     {
         public int i;
         string FaceName;
-        string Element = "Air";
-        string[] Zodiac = { "Gemini", "Libra", "Aquarius" };
-        string Associated = "Intellectual Activity";
+        string Element = "Earth";
+        string[] Zodiac = { "Taurus", "Capricorn", "Virgo" };
+        string Associated = "Finance and material items";
         string Past = "";
         string Present = "";
         string Future = "";
         string Decision = "";
         string Timing = "";
 
-        public Swords(int i)
+        public Pentacles(int i)
         {
             int caseSwitch = i;
 
             switch (caseSwitch)
             {
-                case 36:
-                    FaceName = "One of Swords";
+                case 64:
+                    FaceName = "One of Pentacles";
                     break;
-                case 37:
-                    FaceName = "Two of Swords";
+                case 65:
+                    FaceName = "Two of Pentacles";
                     break;
-                case 38:
-                    FaceName = "Three of Swords";
+                case 66:
+                    FaceName = "Three of Pentacles";
                     break;
-                case 39:
-                    FaceName = "Four of Swords";
+                case 67:
+                    FaceName = "Four of Pentacles";
                     break;
-                case 40:
-                    FaceName = "Five of Swords";
+                case 68:
+                    FaceName = "Five of Pentacles";
                     break;
-                case 41:
-                    FaceName = "Six of Swords";
+                case 69:
+                    FaceName = "Six of Pentacles";
                     break;
-                case 42:
-                    FaceName = "Seven of Swords";
+                case 70:
+                    FaceName = "Seven of Pentacles";
                     break;
-                case 43:
-                    FaceName = "Eight of Swords";
+                case 71:
+                    FaceName = "Eight of Pentacles";
                     break;
-                case 44:
-                    FaceName = "Nine of Swords";
+                case 72:
+                    FaceName = "Nine of Pentacles";
                     break;
-                case 45:
-                    FaceName = "Ten of Swords";
+                case 73:
+                    FaceName = "Ten of Pentacles";
                     break;
-                case 46:
-                    FaceName = "Page of Swords";
+                case 74:
+                    FaceName = "Page of Pentacles";
                     break;
-                case 47:
-                    FaceName = "Knave of Swords";
+                case 75:
+                    FaceName = "Knave of Pentacles";
                     break;
-                case 48:
-                    FaceName = "Queen of Swords";
+                case 76:
+                    FaceName = "Queen of Pentacles";
                     break;
-                case 49:
-                    FaceName = "King of Swords";
+                case 77:
+                    FaceName = "King of Pentacles";
                     break;
                 default:
                     break;
-
             }
 
             Console.WriteLine("Card: {0}", FaceName);
@@ -84,6 +83,7 @@ namespace Tarot
             Console.WriteLine("Decision: {0}", Decision);
             Console.WriteLine("Timing: {0}", Timing);
             Console.WriteLine("");
+
         }
     }
 }

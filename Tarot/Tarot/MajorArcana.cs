@@ -20,11 +20,7 @@ namespace Tarot
         }
 
         string FaceName;
-        string Past = "Past Meaning";
-        string Present = "Present Meaning";
-        string Future = "Future Meaning";
-        string Decision = "Recommended decision";
-        string Timing = "When it will happen";
+
 
         // Constructor to display the information after assignment.
         public MajorArcana(int i)

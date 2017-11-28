@@ -13,11 +13,7 @@ namespace Tarot
         string Element = "Air";
         string[] Zodiac = { "Gemini", "Libra", "Aquarius" };
         string Associated = "Intellectual Activity";
-        string Past = "";
-        string Present = "";
-        string Future = "";
-        string Decision = "";
-        string Timing = "";
+
 
         public Swords(int i)
         {

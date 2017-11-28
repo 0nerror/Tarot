@@ -13,11 +13,7 @@ namespace Tarot
         string Element = "Water";
         string[] Zodiac = { "Pisces", "Cancer", "Scorpio" }; 
         string Associated = "Emotions";
-        string Past = "";
-        string Present = "";
-        string Future = "";
-        string Decision = "";
-        string Timing = "";
+
 
         public Cups(int i)
         {

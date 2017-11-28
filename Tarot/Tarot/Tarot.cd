@@ -5,15 +5,8 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Enum Name="Tarot.MajorArcana.Faces" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>MajorArcana.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AABAAAAAIAAAABAAAAAAAQAAAAAEAQAAAAAAAAUAAAA=</HashCode>
+      <HashCode>AABAAAAAIAAAABAAAAAAAAAAAAAEAQgAIAAAAAUAAAA=</HashCode>
       <FileName>MajorArcana.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -22,72 +15,43 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Enum Name="Tarot.MinorArcana.Faces" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>MinorArcana.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AABAAAAAIAAAABAAAAAAAAAAQAAEAQAAAAAAAAUAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MinorArcana.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tarot.Cards">
     <Position X="0.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAIAAAABAAAAAAAAAAAAAEAQAAAAAAAAUAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cards.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tarot.Cups" Collapsed="true">
     <Position X="7" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACBIAAAAIAAAABAAAAgAAAAAAAAAAQAAIAAAAAUAAAA=</HashCode>
       <FileName>Cups.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Tarot.Suits">
-    <Position X="5" Y="4.75" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
-    <NestedTypes>
-      <Enum Name="Tarot.Suits.SuitNames" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Suits.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-      <Enum Name="Tarot.Suits.PlayCardNames" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Suits.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
-      <FileName>Suits.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tarot.Swords" Collapsed="true">
     <Position X="7" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACBIAAAAIAAAABAAAAgAAAAAAAAAAQAAIAAAAAUAAAA=</HashCode>
       <FileName>Swords.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tarot.Pentacles" Collapsed="true">
     <Position X="7" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACBIAAAAIAAAABAAAAgAAAAAAAAAAQAAIAAAAAUAAAA=</HashCode>
       <FileName>Pentacles.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tarot.Wands" Collapsed="true">
     <Position X="7" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACBIAAAAIAAAABAAAAgAAAAAAAAAAQAAIAAAAAUAAAA=</HashCode>
       <FileName>Wands.cs</FileName>
     </TypeIdentifier>
   </Class>

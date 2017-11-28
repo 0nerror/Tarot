@@ -13,11 +13,7 @@ namespace Tarot
         string Element = "Fire";
         string[] Zodiac = { "Leo", "Aries", "Sagittarius" };
         string Associated = "Career";
-        string Past = "";
-        string Present = "";
-        string Future = "";
-        string Decision = "";
-        string Timing = "";
+
 
         public Wands(int i)
         {

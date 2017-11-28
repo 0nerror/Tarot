@@ -13,11 +13,6 @@ namespace Tarot
         string Element = "Earth";
         string[] Zodiac = { "Taurus", "Capricorn", "Virgo" };
         string Associated = "Finance and material items";
-        string Past = "";
-        string Present = "";
-        string Future = "";
-        string Decision = "";
-        string Timing = "";
 
         public Pentacles(int i)
         {

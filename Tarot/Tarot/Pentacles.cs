@@ -10,9 +10,10 @@ namespace Tarot
     {
         public int i;
         string Element = "Earth";
-        string[] Zodiac = { "Taurus", "Capricorn", "Virgo" };
+        string Zodiac =  "Taurus, Capricorn, Virgo" ;
         string Associated = "Finance and material items";
 
+        // Determine which card we pulled
         public Pentacles(int i)
         {
             int caseSwitch = i;
@@ -64,20 +65,8 @@ namespace Tarot
                 default:
                     break;
             }
-
-            Console.WriteLine("Card: {0}", FaceName);
-            Console.WriteLine("Arcana: {0}", Arcana);
-            Console.WriteLine("Arcana Desc: \n {0}", MinorArcDesc);
-            Console.WriteLine("Element: {0}", Element);
-            Console.WriteLine("Zodiac: {0}", Zodiac);
-            Console.WriteLine("Associated with: {0}", Associated);
-            Console.WriteLine("General Meaning: \n {0}", Meaning);
-            Console.WriteLine("Past: {0}", Past);
-            Console.WriteLine("Present: {0}", Present);
-            Console.WriteLine("Future: {0}", Future);
-            Console.WriteLine("Decision: {0}", Decision);
-            Console.WriteLine("Timing: {0}", Timing);
-            Console.WriteLine("");
+            // Call the method to display the card information to the console
+            DisplayCard card = new DisplayCard(Arcana, ArcDesc, FaceName, Element, Zodiac, Associated, Meaning, Past, Present, Future, Decision, Timing);
 
         }
     }

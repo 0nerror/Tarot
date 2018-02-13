@@ -15,6 +15,6 @@ namespace Tarot
             set { }
         }
 
-        public string MinorArcDesc = "Minor Arcana talks about events, issues and people in our daily lives.";
+        public string ArcDesc = "Minor Arcana talks about events, issues and people in our daily lives.";
     }
 }

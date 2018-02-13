@@ -25,12 +25,12 @@ namespace Tarot
                 Console.WriteLine("6. Exit the program");
 
 
-                // Need to add validation if the selection is somthing other than 1-6
+                // call based on the input by the user 
 
                 caseSwitch = Convert.ToInt32(Console.ReadLine()); 
                 if (caseSwitch != 6)
                 {
-                    DisplayCard card = new DisplayCard();
+                    PickCard card = new PickCard();
 
                     switch (caseSwitch)
                     {
@@ -50,7 +50,7 @@ namespace Tarot
                             card.AllCards();
                             break;
                         default:
-                            Console.WriteLine("Default case");
+                            Console.WriteLine("Please select a number between 1 and 6. Press Enter to select again.");
                             break;
                     }
                 }
@@ -59,7 +59,7 @@ namespace Tarot
                     Console.WriteLine("Have a Great day!");
 
                 }
-
+                Console.WriteLine("Press Enter to continue.");
                 Console.ReadLine();
 
             }

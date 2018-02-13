@@ -17,5 +17,5 @@ namespace Tarot
         public string Decision { get; set; }
         public string Timing { get; set; }
         public string Meaning { get; set; }
-}
+    }
 }
